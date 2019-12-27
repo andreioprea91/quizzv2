@@ -1,0 +1,14 @@
+<div class="container">
+<h1 class="mt-4">Welcome {{user.username}}</h1>
+
+<h3>Your results:</h3>
+
+{{#each user.score}}
+<ul style="list-style-type: none"><li>you got {{this}} questions right</li></ul>
+
+
+
+{{/each}}
+
+</div>
+{{> footer}} 

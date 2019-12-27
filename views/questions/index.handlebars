@@ -1,0 +1,29 @@
+<form action="/dashboard" method="POST" class="form">
+    {{#each data}}
+
+    <h3>{{question}}</h3>
+
+    <div class="inputGroup">
+        <input id="{{answers.[0]}}" name="{{id}}" type="radio" value="{{answers.[0]}}" />
+        <label for="{{answers.[0]}}">{{answers.[0]}}</label>
+    </div>
+    <div class="inputGroup">
+        <input id="{{answers.[1]}}" name="{{id}}" type="radio" value="{{answers.[1]}}" />
+        <label for="{{answers.[1]}}">{{answers.[1]}}</label>
+    </div>
+    <div class="inputGroup">
+        <input id="{{answers.[2]}}" name="{{id}}" type="radio" value="{{answers.[2]}}" />
+        <label for="{{answers.[2]}}">{{answers.[2]}}</label>
+    </div>
+    <div class="inputGroup">
+        <input id="{{answers.[3]}}" name="{{id}}" type="radio" value="{{answers.[3]}}" />
+        <label for="{{answers.[3]}}">{{answers.[3]}}</label>
+    </div>
+
+    {{/each }}
+    <br>
+    <button type="submit" class="btn btn-primary subnew">Submit</button>
+
+    
+</form>
+

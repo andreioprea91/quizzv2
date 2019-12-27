@@ -1,0 +1,30 @@
+@import 'footer.css';
+@import 'questions.css';
+
+html{
+    background-color: #474b4f
+    
+}
+
+.main{
+  background-color: #474b4f;
+  color:#E8E8E8;
+}
+
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+

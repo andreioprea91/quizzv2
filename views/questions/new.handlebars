@@ -1,0 +1,33 @@
+<div class="container">
+
+    {{#if errorMessage}}
+<div class="alert alert-danger" role="alert" >{{errorMessage}}</div>
+{{/if}}
+
+<h2>New Question</h2>
+<form action="/questions" method="POST" >
+    <div class="form-group">
+    <input type="text" class="form-control" name="question" placeholder="Question here" required>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="a" placeholder="Correct answer" required>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="b" placeholder="Wrong answer" required>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="c" placeholder="Wrong answer" required>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="d" placeholder="Wrong answer" required>
+  </div>
+  <button type="submit" class="btn btn-primary subnew">Submit</button>
+  
+</form>
+<br>
+<br>
+
+</div>
+{{> footer}} 
+
+
